@@ -23,4 +23,9 @@ void Egg::createBody()
     g_body->SetAngularDamping(3);
     g_body->CreateFixture(&fixturedef);
 
+    smoke = new QGraphicsPixmapItem();
+    smoke->setPos(mappedPoint.x(),mappedPoint.y());
+    smoke->setPixmap(QPixmap(":/smoke.png"));
+    sceneForSmoke->addItem(smoke);
+
 }

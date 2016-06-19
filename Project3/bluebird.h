@@ -7,7 +7,7 @@ class BlueBird : public Bird{
 public:
 
     BlueBird(float x, float y, float radius, QTimer *timer, QPixmap pixmap, b2World *world, QGraphicsScene *scene);
-    ~BlueBird();
+    virtual ~BlueBird();
 
     virtual void superPower(QTimer *timer, int height, b2World *world, QGraphicsScene *scene);
 

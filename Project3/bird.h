@@ -24,10 +24,10 @@ public:
     float yPos;
     float radius;
     virtual ~Bird();
+    QGraphicsPixmapItem*smoke;
+    QGraphicsScene *sceneForSmoke;
 
 private:
-    QGraphicsScene *sceneForSmoke;
-    QGraphicsPixmapItem*smoke;
 };
 
 #endif // BIRD_H
